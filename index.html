@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in js</title>
+    <style>
+        #bulb {
+            height: 300px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body onload="offf()">
+    <img id="bulb" src="">
+    <button onclick="offf()">off</button>
+    <button onclick="onn()">0n</button>
+    <script>
+        function onn() {
+            var img = document.getElementById("bulb");
+            img.src = "./image/bulb-on.jpg";
+        }
+
+        function offf() {
+            var img = document.getElementById("bulb");
+            img.src = "./image/bulb-off.jpg";
+
+        }
+    </script>
+
+</body>
+
+</html>
